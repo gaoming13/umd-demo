@@ -1,7 +1,7 @@
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD: 注册匿名模块
-    require(['./a', './b'], factory)    
+    require(['./a', './b'], factory)
   } else if (typeof module === 'object' && module.exports) {
     // CommonJs
     factory(require('./a'), require('./b'))
